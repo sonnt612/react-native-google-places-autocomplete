@@ -498,7 +498,8 @@ export default class GooglePlacesAutocomplete extends Component {
       request.send(JSON.stringify({
         input: text,
         memberToken: this.props.query.token,
-        region: this.props.query.region
+        region: this.props.query.region,
+        location: this.props.query.location
       }));
     } else {
       this._results = [];
